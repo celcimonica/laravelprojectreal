@@ -67,8 +67,8 @@ class="fas fa-bars"></i></a>
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
 <!-- Brand Logo -->
 <a href="index3.html" class="brand-link">
-<img src="{{ asset('dist/img/1409475084.webp')}}" alt="AdminLTE Logo"
-class="brand-image img-circle elevation-3" style="opacity: .8">
+<img src="{{ asset('dist/img/Brown Abstract Pet Shop Free Logo.png')}}" alt="AdminLTE Logo"
+class="brand-image img-circle elevation-3" style="opacity: .9">
 <span class="brand-text font-weight-light">Pet Shop Mica</span>
 </a>
 <!-- Sidebar -->
