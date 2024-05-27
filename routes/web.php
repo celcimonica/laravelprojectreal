@@ -6,6 +6,7 @@ use App\Http\Controllers\LayananController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PelangganController;
+use App\Http\Controllers\ReportController;
 
 use App\Http\Controllers\CetakController;
 
@@ -48,3 +49,4 @@ Route::get('transaksi',function(){
     ]);
 })->middleware('auth');
 Route::get('cetakReceipt',[CetakController::class,'receipt'])->name('cetakReceipt')->middleware('auth');
+Route::resource('reports', ReportController::class);

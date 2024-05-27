@@ -143,6 +143,7 @@
                         70% Increase in 30 Days
                     </span>
                 </div>
+                
                 <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->

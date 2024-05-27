@@ -18,7 +18,7 @@
       <source src="texas-the-omertosa-arknights-desktop-wallpaperwaifu-com.mp4">
   </video> -->
   <!-- <div class="inner-container"> -->
-<body class="hold-transition login-page" style="background-image: url('d959d577-ba88-4fe0-9dbf-a8173e6a2b17_169.jpg'); background-size: cover";>
+<body class="hold-transition login-page" style="background-image: url('wallpapersden.com_frieren-hd-frieren-beyond-journey-s-end_4500x2761.jpg'); background-size: cover";>
     <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary" style="background: transparent; border: 2px solid rgba(255, 255, 255, .2)";>
