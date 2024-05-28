@@ -6,8 +6,9 @@ use App\Http\Controllers\LayananController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PelangganController;
-use App\Http\Controllers\ReportController;
+// use App\Http\Controllers\ReportController;
 
+use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\CetakController;
 
 /*
@@ -21,14 +22,15 @@ use App\Http\Controllers\CetakController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/', function () {
-    return view('dashboard',[
-    "title"=>"Dashboard"
-    ]);
-    })->middleware('auth');
+Route::get('/',[WelcomeController::class,'welcome'])->middleware('auth');
+
+
+
+// Route::get('/', function () {
+//     return view('dashboard',[
+//     "title"=>"Dashboard"
+//     ]);
+//     })->middleware('auth');
     // Route::resource('kategori',CategoryController::class)->except('show','destroy','create')->middleware('auth');
 Route::resource('pelanggan',PelangganController::class)->except('destroy')->middleware('auth');
 Route::resource('layanan',LayananController::class)->middleware('auth');
@@ -49,4 +51,4 @@ Route::get('transaksi',function(){
     ]);
 })->middleware('auth');
 Route::get('cetakReceipt',[CetakController::class,'receipt'])->name('cetakReceipt')->middleware('auth');
-Route::resource('reports', ReportController::class);
+// Route::resource('reports', ReportController::class);

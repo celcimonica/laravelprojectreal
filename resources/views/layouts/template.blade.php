@@ -157,14 +157,13 @@ Laporan
 </a>
 <ul class="nav nav-treeview">
 <li class="nav-item">
-<a href="{{ route('reports.index')}}" class="nav-link">
+<a href="#" class="nav-link">
 <i class="far fa-circle nav-icon"></i>
 <p>Harian</p>
 </a>
 </li>
 <li class="nav-item">
-<a href="{{ route('reports.index')}}" class="nav-link{{ ($title==='reports') ? 'active':''
-}}">
+<a href="#" class="nav-link">
 <i class="far fa-circle nav-icon"></i>
 <p>Bulanan</p>
 </a>

@@ -23,7 +23,7 @@
         <!-- /.login-logo -->
         <div class="card card-outline card-primary" style="background: transparent; border: 2px solid rgba(255, 255, 255, .2)";>
             <div class="card-header text-center">
-                <h1 class="h1">Aplikasi<b>POS</b></h1>
+                <h1 class="h1">Aplikasi<b>Pet</b></h1>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Please Login</p>

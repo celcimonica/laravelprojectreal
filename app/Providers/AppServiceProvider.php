@@ -22,11 +22,12 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot():void
+    public function boot(): void
     {
         //
-        Blade::directive('money',function($amount){
-            return"<?php echo 'Rp. '. number_format($amount, 2); ?>";
+        Blade::directive('money', function ($amount) {
+            return "<?php echo 'Rp. ' . number_format($amount, 2); ?>";
         });
-    }
+    }	
+
 }

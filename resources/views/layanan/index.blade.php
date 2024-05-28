@@ -39,7 +39,7 @@ buttons/css/buttons.bootstrap4.min.css">
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $dt->nama }}</td>
-                        <td>{{ ($dt->price) }}</td>
+                        <td> @money($dt->price) </td>
                         <td>{{ ($dt->stock) }}</td>
                         <td>{{ $dt->jeniskategori }}</td>
                         <td>{{ $dt->description }}</td>
