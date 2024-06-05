@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LaporanController;
 // use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\LayananController;
 use App\Http\Controllers\LoginController;
@@ -52,3 +53,10 @@ Route::get('transaksi',function(){
 })->middleware('auth');
 Route::get('cetakReceipt',[CetakController::class,'receipt'])->name('cetakReceipt')->middleware('auth');
 // Route::resource('reports', ReportController::class);
+
+Route::get('laporan', [LaporanController::class, 'index'])->name('laporan.index');
+
+
+// Route::get('/laporan/harian', [LaporanController::class, 'laporanHarian']);
+// Route::get('/laporan/bulanan', [LaporanController::class, 'laporanBulanan']);
+// Route::get('/laporan/tahunan', [LaporanController::class, 'laporanTahunan']);

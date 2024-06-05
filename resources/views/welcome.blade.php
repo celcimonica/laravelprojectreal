@@ -7,7 +7,7 @@
 
     <!-- =========================================================== -->
     <h1 class="h3 mb-1">
-        <strong>Layanan</strong> Tercatat
+        <strong>layanan</strong> Tercatat
     </h1>
     <div class="row">
         <div class="col-md-3 col-sm-6 col-12">
@@ -15,7 +15,7 @@
                 <span class="info-box-icon bg-info"><i class="far fa-envelope"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Hardware</span>
+                    <span class="info-box-text">Novel</span>
                     <span class="info-box-number">None</span>
                 </div>
                 <!-- /.info-box-content -->
@@ -28,7 +28,7 @@
                 <span class="info-box-icon bg-success"><i class="far fa-flag"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Software</span>
+                    <span class="info-box-text">Cerpen</span>
                     <span class="info-box-number">Small</span>
                 </div>
                 <!-- /.info-box-content -->
@@ -41,7 +41,7 @@
                 <span class="info-box-icon bg-warning"><i class="far fa-copy"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Jasa</span>
+                    <span class="info-box-text"><A>Artikel</A></span>
                     <span class="info-box-number">Regular</span>
                 </div>
                 <!-- /.info-box-content -->
@@ -54,11 +54,11 @@
                 <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
 
                 <div class="info-box-content">
-                    <span class="info-box-text">Barang</span>
+                    <span class="info-box-text">Antologi</span>
                     <span class="info-box-number">Large</span>
                 </div>
                 <!-- /.info-box-content -->
-            </div>
+                </div>
             <!-- /.info-box -->
         </div>
         <!-- /.col -->
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <h1 class="mt-1 mb-3">
-                            Rp
+                            Rp.
                         </h1>
                         <div class="mb-0">
                             <span class="text">
@@ -111,7 +111,6 @@
                                     Saldo Bulanan
                                 </h5>
                             </div>
-
                             <div class="col-auto">
                                 <div class="stat text-primary">
                                     <i class="align-middle" data-feather="truck"></i>
@@ -119,7 +118,7 @@
                             </div>
                         </div>
                         <h1 class="mt-1 mb-3">
-                            Rp
+                            Rp.
                         </h1>
                         <div class="mb-0">
                             <span class="text">
@@ -140,7 +139,7 @@
                             <div class="col mt-0 ">
                                 <h5 class="card-title-">
                                     Saldo Tahunan
-                                </h5>
+                                    </h5>
                             </div>
 
                             <div class="col-auto">
@@ -150,7 +149,7 @@
                             </div>
                         </div>
                         <h1 class="mt-1 mb-3">
-                            coba
+                            Rp.
                         </h1>
                         <div class="mb-0">
                             <span class="text">
@@ -168,7 +167,7 @@
                 <div class="card">
                     <div class="card-body info-box-icon bg-danger">
                         <div class="row ">
-                            <div class="col mt-0 ">
+                        <div class="col mt-0 ">
                                 <h5 class="card-title-">
                                     Saldo Akhir
                                 </h5>
@@ -181,7 +180,7 @@
                             </div>
                         </div>
                         <h1 class="mt-1 mb-3">
-                            Rp
+                            Rp.
                         </h1>
                         <div class="mb-0">
                             <span class="text">
@@ -195,52 +194,52 @@
                 <!-- /.info-box -->
             </div>
             <!-- /.col -->
-        </div>
+            </div>
 
 
 
 
 
-        <!-- =========================================================== -->
-        <h1 class="h3 mb-1 mt-3">
-            <strong>Transaksi</strong> Terakhir
-        </h1>
-        <div class="card-body">
-            <table id="example1" class="table table-bordered table-striped ">
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama Pelanggan</th>
-                        <th>TotalTransaksi</th>
+<!-- =========================================================== -->
+<h1 class="h3 mb-1 mt-3">
+    <strong>Transaksi</strong> Terakhir
+</h1>
+<div class="card-body">
+    <table id="example1" class="table table-bordered table-striped ">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama Pelanggan</th>
+                <th>Total Transaksi</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach($datatransaksi as $dt)
+            <tr>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $dt->pelanggan->nama }}</td>
+                <td>{{ $dt->total }}</td>
                         
-                    </tr>
-                </thead>
-                <tbody>
-
-                    @foreach($datatransaksi as $dt)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $dt->pelanggan->nama }}</td>
-                        <td>{{ $dt->total }}</td>
-                        
-                    </tr>
-
-                    @endforeach
-                </tbody>
-            </table>
-
-        </div>
-
-
-
-
-        <!-- =========================================================== -->
-        <h1 class="h3 mb-1 mt-3">
-            <strong>Administrasi</strong> Tercatat
-        </h1>
-        <div class="row">
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="info-box bg-gradient-info">
+                        </tr>
+    
+                        @endforeach
+                    </tbody>
+                </table>
+    
+            </div>
+    
+    
+    
+    
+            <!-- =========================================================== -->
+            <h1 class="h3 mb-1 mt-3">
+                <strong>Administrasi</strong> Tercatat
+            </h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-12">
+                    <div class="info-box bg-gradient-info">
                     <span class="info-box-icon"><i class="far fa-bookmark"></i></span>
 
                     <div class="info-box-content">
@@ -283,7 +282,10 @@
                 <div class="info-box bg-gradient-warning">
                     <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
 
-                  
+                    <div class="info-box-content">
+                        <span class="info-box-text">layanan</span>
+                        <span class="info-box-number">{{$layanan}}</span>
+
                         <div class="progress">
                             <div class="progress-bar" style="width: 70%"></div>
                         </div>
@@ -291,24 +293,12 @@
                             70% Increase in 30 Days
                         </span>
                     </div>
-                    <!-- /.info-box-content -->
-                </div>
+ <!-- /.info-box-content -->
+ </div>
                 <!-- /.info-box -->
             </div>
             <!-- /.col -->
-            <div class="col-md-3 col-sm-6 col-12">
-                <div class="info-box bg-gradient-danger">
-                    <span class="info-box-icon"><i class="fas fa-comments"></i></span>
-
-                 
-
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 70%"></div>
-                        </div>
-                        <span class="progress-description">
-                            70% Increase in 30 Days
-                        </span>
-                    </div>
+            
                     <!-- /.info-box-content -->
                 </div>
                 <!-- /.info-box -->
@@ -319,9 +309,4 @@
     </div><!-- /.container-fluid -->
 
 
-    @endsection
-
-
-
-
-
+    @endsection

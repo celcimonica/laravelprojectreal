@@ -47,6 +47,7 @@ buttons/css/buttons.bootstrap4.min.css">
                         <input type ="file" name="foto" id="foto" class="form-control" placeholder="foto" >
                         
                       </div>
+                      
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
@@ -62,7 +63,10 @@ buttons/css/buttons.bootstrap4.min.css">
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-            <table id="example1" class="table table-bordered table-striped ">
+            <!-- <table id="example1" class="table table-bordered table-striped "> -->
+            <!-- <table class="table table-dark table-hover"> -->
+            <table class="table table-success table-striped">
+
                 <thead>
                     <tr>
                         <th>No</th>

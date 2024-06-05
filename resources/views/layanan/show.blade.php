@@ -38,7 +38,7 @@
                 <tr>
                     <th>Jenis</th>
                     <td>:</td>
-                    <td>{{ $data[0]->jenis }}</td>
+                    <td>{{ $data[0]->jeniskategori }}</td>
                 </tr>
                 <tr>
                     <th>Deskripsi</th>

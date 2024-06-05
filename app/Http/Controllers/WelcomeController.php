@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 
-use App\Models\Layanan;
-use App\Models\Pelanggan;
+use App\Models\layanan;
+use App\Models\pelanggan;
 use App\Models\User;
 use App\Models\transaksi;
 use Illuminate\Http\Request;
@@ -13,8 +13,8 @@ class WelcomeController extends Controller
 {
     public function welcome()
     {
-        $layanan = Layanan::count();
-        $pelanggan = Pelanggan::count();
+        $layanan = layanan::count();
+        $pelanggan = pelanggan::count();
         $user = User::count();
         $datatransaksi = transaksi::count();
 
@@ -38,10 +38,9 @@ class WelcomeController extends Controller
         return view('welcome',[
           
             "pelanggan"=> $pelanggan,
-         
             "layanan"=> $layanan,
             "user"=> $user,
-            "datatransaksi" => transaksi::paginate(5),
+            "datatransaksi" => transaksi::paginate(3),
             "title"=>"welcome"
         ]);
         

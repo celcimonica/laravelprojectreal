@@ -32,8 +32,10 @@ public function index()
         $request->merge([
             "password"=>$password
         ]);
-
-        User::create($request->all());
+        // $foto=$_FILES['foto'] ['nama'];
+        // $file_tmp=$_FILES['foto'] ['tmp_nama'];
+        // move_uploaded_file($file_tmp, '../../fotouser/'.$foto);
+        // User::create($request->all());
         
         return redirect()->route('pengguna.index')->with('success','Data User Berhasil Ditambahkan');
     }

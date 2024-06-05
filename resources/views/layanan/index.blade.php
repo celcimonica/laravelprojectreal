@@ -22,9 +22,12 @@ buttons/css/buttons.bootstrap4.min.css">
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-            <table id="example1" class="table table-bordered table-striped ">
+            <!-- <table id="example1" class="table table-bordered table-striped "> -->
+            <!-- <table class="table-info"> -->
+            <table class="table table-success table-striped">
+            <!-- <table class="table table-bordered border-primary"> -->
                 <thead>
-                    <tr>
+          <tr>
                         <th>No</th>
                         <th>Nama</th>
                         <th>Harga</th>
